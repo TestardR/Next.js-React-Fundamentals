@@ -1,4 +1,5 @@
 import react from 'react';
+import DigitalClock from '../src/DigitalClock';
 
 class Index extends React.Component {
   constructor(props) {
@@ -25,12 +26,7 @@ class Index extends React.Component {
   }
 
   render() {
-    return (
-      <h1>
-        Hello From Pluralsight and React:
-        {this.state.time}
-      </h1>
-    );
+    return <DigitalClock time={this.state.time} />;
   }
 }
 
